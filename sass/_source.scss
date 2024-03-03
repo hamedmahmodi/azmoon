@@ -1,0 +1,9 @@
+.mainView{
+    max-width: 1100px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	@include mvb{
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
+}
