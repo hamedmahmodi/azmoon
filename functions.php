@@ -140,9 +140,10 @@ add_action( 'widgets_init', 'azmoon_widgets_init' );
 function azmoon_scripts() {
 	wp_enqueue_style( 'azmoon-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'azmoon-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'materialize-style', get_template_directory_uri().'/materialize/sass/materialize.scss', array(), _S_VERSION );
 
 	wp_enqueue_script( 'azmoon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize/js/bin/materialize.min.js', array(), _S_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -16,7 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="/materialize/sass/materialize.scss"  media="screen,projection"/>
 	<?php wp_head(); ?>
 </head>
 
@@ -57,3 +58,6 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="/materialize/js/bin/materialize.min.js"></script>
