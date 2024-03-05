@@ -29,6 +29,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/materialize/js/bin/materialize.min.js"></script>
 </body>
 </html>

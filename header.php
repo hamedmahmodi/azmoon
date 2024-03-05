@@ -15,10 +15,14 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="/materialize/sass/materialize.scss"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/materialize/css/materialize.min.css"  media="screen,projection"/>
 	<?php wp_head(); ?>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,5 +63,3 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 </div>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="/materialize/js/bin/materialize.min.js"></script>
