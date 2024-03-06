@@ -20,6 +20,5 @@
                 </div>
             <?php endwhile;
         endif; ?>
-        <a class="waves-effect waves-light btn">button</a>
     </div>
 </div>
