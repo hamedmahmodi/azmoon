@@ -12,15 +12,16 @@ $azmoon_single_test_container = get_field('azmoon_single_test_container' , $quiz
 
 foreach($azmoon_single_test_container as $cont){?>
     <div class="questionAnswerContainer">
-    <p class="testQuestionTxt"><?php echo $cont['test_question']; ?></p>
-    <?php foreach($cont['test_answers'] as $ans){?>
-        <div class="testAnswersLists">
-            <p>
-                <input type="checkbox" id="test5" />
-                <label for="test5"><?php echo $ans['answer']; ?></label>
-            </p>
-        </div>
-    <?php } ?>
+        <p class="testQuestionTxt"><?php echo $cont['test_question']; ?></p>
+        <?php foreach($cont['test_answers'] as $ans){?>
+            <div class="testAnswersLists">
+                <label for="test5">
+                    <input type="checkbox" id="test5" />
+                    <span><?php echo $ans['answer']; ?></span>
+                </label>
+            </div>
+        <?php } ?>
+    </div>
 <?php } ?>
 
 <?php get_footer();
