@@ -39,34 +39,7 @@ foreach ($azmoon_single_test_container as $questionIndex => $cont) { ?>
 <button id="performTest">حساب کن</button>
 <div class="results"></div>
 </div>
-<script>
-    
-    //var jsData = [<?php //echo json_encode($phpData); ?>];
-    // var selectedRadio = document.querySelectorAll('input[name="test_<?php echo json_encode($phpData);?>"]');
 
-        // console.log(selectedRadio);
-    
-</script>
-
-
-    foreach ($azmoon_single_test_container as $questionIndex => $cont) { ?>
-        <div class="questionAnswerContainer">
-            <p class="testQuestionTxt"><?php echo $cont['test_question']; ?></p>
-            <?php foreach ($cont['test_answers'] as $answerIndex => $ans) { ?>
-                <?php
-                    // Assuming 'score' is a field associated with each answer
-                    // $score = $ans['score'] ; // Adjust this based on your field structure
-                    $phpData[] = $questionIndex; // Add the score to the array
-                    ?>
-                    <label for="test_<?php echo $questionIndex . '_' . $answerIndex; ?>">
-                        <input type="radio" class="myInput with-gap" value="<?php echo $ans['score'] ?>" name="test_<?php echo $questionIndex; ?>" id="test_<?php echo $questionIndex . '_' . $answerIndex; ?>" />
-                        <span><?php echo $ans['answer']; ?></span>
-                    </label>
-            <?php } ?>
-        </div>
-    <?php } ?>
-    <button id="performTest" class="waves-effect waves-light btn">حساب کن</button>
-    <div class="results"></div>
 </div>
 
 
