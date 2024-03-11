@@ -9,6 +9,11 @@ let intervalId;
 window.onload = initializeTimer;
 
 function initializeTimer() {
+    const totalTimeInSeconds = currentMinutes * 60 + currentSeconds;
+    const remainingTimePercentage = ((totalTimeInSeconds - (currentMinutes * 60 + currentSeconds)) / totalTimeInSeconds) * 100;
+    const transitionDuration = totalTimeInSeconds - (currentMinutes * 60 + currentSeconds);
+
+    updateProgressBar(remainingTimePercentage);
     intervalId = setInterval(function () {
         currentSeconds--;
         if (currentSeconds < 0) {
@@ -25,10 +30,15 @@ function initializeTimer() {
             currentMinutes = 0;
             $('#performTest').click();
         }
+        updateProgressBar(((totalTimeInSeconds - (currentMinutes * 60 + currentSeconds)) / totalTimeInSeconds) * 100);
     }, 1000);
 }
 function formatTimeElement(time) {
     return time < 10 ? `0${time}` : time;
+}
+function updateProgressBar(newWidth) {
+    const progressBar = document.getElementById('dynamicProgressBarSetTime');
+    progressBar.style.width = newWidth + '%';
 }
 
 $(document).ready(function () {
@@ -45,4 +55,3 @@ $(document).ready(function () {
         $('.results').html(starterScore);
     });
 });
-
