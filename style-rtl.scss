@@ -36,3 +36,63 @@ img{
         }
     }
 }
+footer{
+    .site-info{
+        background-color: red;
+        padding-top: 50px;
+        .mainFooter{
+            a{
+                padding-left: 10px;
+            }
+            h5{
+                margin-bottom: 20px !important;
+            }
+            margin-bottom: 50px !important;
+            .footerForm{
+                
+                display: flex;
+                align-items: flex-start;
+                input[type=email]{
+                    background-color: #ffffffab;
+                    border-radius: 10px;
+                    border: 2px solid white;
+                    padding: 0 15px;
+                    &::placeholder{
+                        color: white;
+
+                    }
+                }
+                input[type=submit]{
+                    margin-right: 35px;
+                    height: 2.6rem;
+                }
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                }
+                .wpcf7-spinner{
+                    display: none;
+                }
+                .wpcf7-not-valid-tip{
+                    color: #ffffffb0;
+                }
+                input[type=email], select, textarea{
+                    color: white;
+                }
+                
+                textarea:focus, input:focus {
+                    color: white;
+                }
+            }
+            
+        }
+        .copyRight{
+            border-top:1px solid #ffffffa1 ;
+            padding: 15px 0;
+            a{
+                padding: 0 10px;
+            }
+        }
+    }
+}

@@ -8,6 +8,7 @@ $quizID = $_GET['quiz'];
 $azmoon_single_test_container = get_field('azmoon_single_test_container', $quizID);
 $azmoon_single_test_time = get_field('azmoon_single_test_time', $quizID);
 ?>
+<div class="runBackPage mainView">
 <div>You are running Quiz with ID = <?php echo $quizID; ?></div>
 <div class="timerCountParent"><span id="min"><?php echo $azmoon_single_test_time ?></span>:<span id="sec">00</span></div>
 
@@ -33,7 +34,7 @@ foreach ($azmoon_single_test_container as $questionIndex => $cont) { ?>
 <?php } ?>
 <button id="performTest">حساب کن</button>
 <div class="results"></div>
-
+</div>
 <script>
     
     //var jsData = [<?php //echo json_encode($phpData); ?>];
