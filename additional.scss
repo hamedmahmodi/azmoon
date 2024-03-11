@@ -1,9 +1,55 @@
+@import 'sass/breakpoints';
+@import 'sass/source';
+
 .archiveTestsParent{
     .testsCategoryParent{
         .testsCategorySections {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            grid-gap: 20px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-gap: 10px;
+            @include xs{
+                grid-template-columns: repeat(1,minmax(0,1fr)) !important;
+            }
+            @include sm{
+                grid-template-columns: repeat(2,minmax(0,1fr));
+                grid-gap: 0px;
+            }
+            .row{
+                .card{
+                    border-radius: 8px;
+                }
+                .card-image{
+                    .linkBtnTestCardArchive{
+                        background-color: #2e31a6 !important;
+                        left: 24px !important;
+                        right: unset;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .imageTestCardArchive{
+                        overflow: hidden;
+                        min-height: 200px;
+                        max-height: 200px;
+                        img{
+                            border-radius: 8px 8px 0 0;
+                        }
+                    }
+                }
+                .card-content{
+                    .titleTestCardArchive{
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+                    .explainTestCardArchive{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        h3.titleOfCategory{
+            border-bottom: 1px solid #9e9e9e;
+            padding-bottom: 10px;
         }
     }
 }

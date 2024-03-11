@@ -13,13 +13,6 @@ get_header();
     <?php
     // get the post id
     $quizID = get_the_ID();
-    // set query parameters
-    $query_args = array(
-        'param1' => 'value1',
-        'param2' => 'value2',
-    );
-    // create link url by query parameters
-    $link_url = add_query_arg($query_args, get_permalink($post_id));
     ?>
     <div class="linkToQuizButtonParent">
         <a href="<?php echo get_site_url(); ?>/run-quiz?quiz=<?php echo $quizID; ?>" id="load-content-button" class="waves-effect waves-light btn deep-orange darken-4 white-text">شروع آزمون</a>
