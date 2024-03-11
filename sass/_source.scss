@@ -1,9 +1,101 @@
+body {
+	// font-family: danaweb  !important;
+	direction: rtl;
+	margin: 0;
+	overflow-x: hidden !important;
+	width: 100% !important;
+	// font-size: 14.5px;
+    padding: 0;
+	// color: $textColorDark !important;
+}
+*{
+	box-sizing: border-box;
+	direction: rtl;
+	// overflow-x: hidden !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+.row{
+	.col{
+		float: right !important;
+	}
+}
+.right{
+	float: left !important;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
 .mainView{
-    max-width: 1100px;
+    width: 85vw;
 	margin-left: auto !important;
 	margin-right: auto !important;
-	@include mvb{
+	@include lg{
+		width: 99vw;
 		padding-right: 15px !important;
 		padding-left: 15px !important;
+	}
+}
+
+label{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 13px;
+	text-align: right;
+	width: 100%;
+	padding-right: 15px;
+}
+input{
+	display: block;
+	
+	padding: 10px 20px;
+	&[type=text] , &[type=password] , &[type=email] , &[type=tel] , &[type=url]{
+		border: none;
+		// background-color: $backColorLight;
+		border-radius: 45px;
+		// color: $textColorDark;
+		font-size: 14px;
+		width: 100%;
+		direction: rtl !important;
+		margin: 0 !important;
+		height: 2.5rem !important;
+	}
+	&[type=checkbox]{
+		width: max-content;
+		margin: 0;
+	}
+	&[type=submit]{
+		// background-color: $textColorDark;
+		// color: #fff;
+		border: none;
+		font-weight: 500;
+		padding: 0 25px;
+		cursor: pointer;
+		transition: all 0.3s;
+		border-radius: 10px;
+		font-size: 14px;
+		&:hover{
+			// background-color: #000;
+		}
+	}
+	&:focus{
+		outline: none;
+	}
+}
+textarea{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	height: 150px;
+	padding: 10px 20px;
+	resize: none;
+	border-radius: 15px;
+	// background-color: $backColorLight;
+	border: none;
+	// color: $textColorDark;
+	font-size: 14px;
+	&:focus{
+		outline: none;
 	}
 }

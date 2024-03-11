@@ -6,8 +6,12 @@ Template Name: Home
 get_header();
 
 ?>
-
-  <div class="row">
+<div class="homeBackPage mainView">
+    <div class="row">
+      <div class="grid-example col s12 teal darken-1"><span class="flow-text">I am always full-width (col s12)</span></div>
+      <div class="grid-example col s12 l6 teal darken-1 hide"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
+    </div>
+  <!-- <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -86,7 +90,8 @@ get_header();
       </label>
     </p>
   </form>
-  </div>
+  </div> -->
+</div>
 
 
 <?php

@@ -13,17 +13,26 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'azmoon' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'azmoon' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'azmoon' ), 'azmoon', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+            <div class="row mainView mainFooter">
+              <div class="col s12 m8">
+                <h5 class="white-text">لوگو</h5>
+                <a class="grey-text text-lighten-4" href="#">لورم ایپسوم</a>
+                <a class="grey-text text-lighten-4" href="#">لورم ایپسوم</a>
+                <a class="grey-text text-lighten-4" href="#">لورم ایپسوم</a>
+                <a class="grey-text text-lighten-4" href="#">لورم ایپسوم</a>
+                <a class="grey-text text-lighten-4" href="#">لورم ایپسوم</a>
+              </div>
+              <div class="col s12 m4">
+                <h5 class="white-text">عضویت در خبرنامه</h5>
+                <?php echo do_shortcode('[contact-form-7 id="45ce08f" title="عضویت خبرنامه"]') ?>
+              </div>
+            </div>
+          <div class="footer-copyright mainView copyRight">
+            <a  class="grey-text text-lighten-4"href="#">© 2014 Copyright Text</a>
+            <a class="grey-text text-lighten-4 right" href="#!">لورم ایپسوم</a>
+            <a class="grey-text text-lighten-4 right" href="#!">لورم ایپسوم</a>
+            <a class="grey-text text-lighten-4 right" href="#!">لورم ایپسوم</a>
+          </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,13 +1,97 @@
+body {
+  direction: rtl;
+  margin: 0;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row .col {
+  float: right !important;
+}
+
+.right {
+  float: left !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .mainView {
-  max-width: 1100px;
+  width: 85vw;
   margin-left: auto !important;
   margin-right: auto !important;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .mainView {
+    width: 99vw;
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-align: right;
+  width: 100%;
+  padding-right: 15px;
+}
+
+input {
+  display: block;
+  padding: 10px 20px;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=url] {
+  border: none;
+  border-radius: 45px;
+  font-size: 14px;
+  width: 100%;
+  direction: rtl !important;
+  margin: 0 !important;
+  height: 2.5rem !important;
+}
+input[type=checkbox] {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+}
+input[type=submit] {
+  border: none;
+  font-weight: 500;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+  font-size: 14px;
+}
+input:focus {
+  outline: none;
+}
+
+textarea {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  resize: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+}
+textarea:focus {
+  outline: none;
 }
 
 img {
@@ -47,4 +131,62 @@ img {
 }
 .testsSinglePageParent .testsSingleSecUp .imageBoxTests img {
   border-radius: 10px;
+}
+
+footer .site-info {
+  background-color: red;
+  padding-top: 50px;
+}
+footer .site-info .mainFooter {
+  margin-bottom: 50px !important;
+}
+footer .site-info .mainFooter a {
+  padding-left: 10px;
+}
+footer .site-info .mainFooter h5 {
+  margin-bottom: 20px !important;
+}
+footer .site-info .mainFooter .footerForm {
+  display: flex;
+  align-items: flex-start;
+}
+footer .site-info .mainFooter .footerForm input[type=email] {
+  background-color: rgba(255, 255, 255, 0.6705882353);
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 0 15px;
+}
+footer .site-info .mainFooter .footerForm input[type=email]::-moz-placeholder {
+  color: white;
+}
+footer .site-info .mainFooter .footerForm input[type=email]::placeholder {
+  color: white;
+}
+footer .site-info .mainFooter .footerForm input[type=submit] {
+  margin-right: 35px;
+  height: 2.6rem;
+}
+footer .site-info .mainFooter .footerForm span {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+footer .site-info .mainFooter .footerForm .wpcf7-spinner {
+  display: none;
+}
+footer .site-info .mainFooter .footerForm .wpcf7-not-valid-tip {
+  color: rgba(255, 255, 255, 0.6901960784);
+}
+footer .site-info .mainFooter .footerForm input[type=email], footer .site-info .mainFooter .footerForm select, footer .site-info .mainFooter .footerForm textarea {
+  color: white;
+}
+footer .site-info .mainFooter .footerForm textarea:focus, footer .site-info .mainFooter .footerForm input:focus {
+  color: white;
+}
+footer .site-info .copyRight {
+  border-top: 1px solid rgba(255, 255, 255, 0.631372549);
+  padding: 15px 0;
+}
+footer .site-info .copyRight a {
+  padding: 0 10px;
 }/*# sourceMappingURL=style-rtl.css.map */
