@@ -145,26 +145,34 @@ textarea:focus {
   src: url("fonts/iransansx/woff2/IRANSansX-Black.woff2");
   font-weight: 900;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections {
+.archiveTestsParent {
+  min-height: 100vh;
+}
+.archiveTestsParent .searchResult {
+  margin-top: 20px;
+}
+
+.testsCategorySections {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 10px;
 }
 @media screen and (max-width: 480px) {
-  .archiveTestsParent .testsCategoryParent .testsCategorySections {
+  .testsCategorySections {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
 }
 @media screen and (max-width: 768px) {
-  .archiveTestsParent .testsCategoryParent .testsCategorySections {
+  .testsCategorySections {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 0px;
   }
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card {
+.testsCategorySections .row .card {
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card-image .linkBtnTestCardArchive {
+.testsCategorySections .row .card-image .linkBtnTestCardArchive {
   background-color: #2e31a6 !important;
   left: 24px !important;
   right: unset;
@@ -172,22 +180,35 @@ textarea:focus {
   justify-content: center;
   align-items: center;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card-image .imageTestCardArchive {
+.testsCategorySections .row .card-image .imageTestCardArchive {
   overflow: hidden;
   min-height: 200px;
   max-height: 200px;
+  height: 200px;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card-image .imageTestCardArchive img {
+.testsCategorySections .row .card-image .imageTestCardArchive img {
   border-radius: 8px 8px 0 0;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card-content .titleTestCardArchive {
+.testsCategorySections .row .card-content .titleTestCardArchive {
   font-weight: 500;
   margin-top: 10px;
 }
-.archiveTestsParent .testsCategoryParent .testsCategorySections .row .card-content .explainTestCardArchive {
+.testsCategorySections .row .card-content .explainTestCardArchive {
   text-align: justify;
 }
-.archiveTestsParent .testsCategoryParent h3.titleOfCategory {
+
+h3.titleOfCategory {
   border-bottom: 1px solid #9e9e9e;
   padding-bottom: 10px;
+}
+
+.site-header nav {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background-color: #fff;
+}
+.site-header nav .nav-wrapper a {
+  color: #000;
 }/*# sourceMappingURL=additional.css.map */

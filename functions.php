@@ -180,4 +180,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-add_filter('wpcf7_autop_or_not', '__return_false'); 
+add_filter('wpcf7_autop_or_not', '__return_false');
+require_once 'custom-functions/search-function.php';

@@ -7,8 +7,9 @@ get_header();
             <h1 class="">آزمون ها</h1>
         </div>
         <div class="liveSearchSectionParent">
-            <input class="input-field" type="text" name="" id="">
+            <input class="input-field" type="text" name="" id="searchQuizInput">
         </div>
+		<div class="searchResult testsCategorySections"></div>
         <div class="testsCategoryParent">
             <?php 
             $terms = get_terms( array(
