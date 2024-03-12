@@ -303,13 +303,19 @@ h3.titleOfCategory {
 .testsSinglePageParent .linkToQuizButtonParent a.btn {
   background-color: #2e31a6 !important;
   border-radius: 8px;
+  font-size: 20px;
+  padding: 15px 25px;
+  height: auto;
 }
 
 .testsSinglePageParent .testsSingleSecUp {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 25px 20px;
+  margin: 30px 0px;
 }
 @media screen and (max-width: 768px) {
   .testsSinglePageParent .testsSingleSecUp {
@@ -317,59 +323,79 @@ h3.titleOfCategory {
   }
 }
 .testsSinglePageParent .testsSingleSecUp .detailSection {
-  width: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media screen and (max-width: 768px) {
   .testsSinglePageParent .testsSingleSecUp .detailSection {
     width: 100%;
+    order: 1;
   }
 }
-.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox {
+.testsSinglePageParent .testsSingleSecUp .detailSection .titleTestTxt {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .explainTestCardArchive {
+  margin: 0;
+  text-align: justify;
+}
+.testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   width: -moz-max-content;
-  width: 35%;
+  width: 90%;
   padding: 10px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox {
+  .testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox {
     width: 100%;
   }
 }
-.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .timeQuizsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .timeQuizsCol1 {
+.testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .timeQuizsCol1, .testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .numberOfStartTestCol2, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .timeQuizsCol1, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .numberOfStartTestCol2, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .timeQuizsCol1, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .numberOfStartTestCol2 {
   display: flex;
-  flex-direction: column;
   gap: 8px;
   align-items: center;
 }
-.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .timeQuizsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .timeQuizsCol1 p {
+.testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .timeQuizsCol1 p, .testsSinglePageParent .testsSingleSecUp .numberOfQuestionsBox .numberOfStartTestCol2 p, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .timeQuizsCol1 p, .testsSinglePageParent .testsSingleSecUp .timeQuizsBox .numberOfStartTestCol2 p, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .timeQuizsCol1 p, .testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox .numberOfStartTestCol2 p {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
 }
-.testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent {
+.testsSinglePageParent .testsSingleSecUp .numberOfStartTestBox {
+  margin-bottom: 0;
+}
+.testsSinglePageParent .testsSingleSecUp .boxsParent {
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
 }
 @media screen and (max-width: 768px) {
-  .testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent {
+  .testsSinglePageParent .testsSingleSecUp .boxsParent {
     gap: 0;
+    width: 100%;
+    order: 3;
   }
 }
-.testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent svg {
+.testsSinglePageParent .testsSingleSecUp .boxsParent svg {
   display: block;
 }
 .testsSinglePageParent .testsSingleSecUp .imageBoxTests {
-  width: 35%;
+  width: 30%;
 }
 @media screen and (max-width: 768px) {
   .testsSinglePageParent .testsSingleSecUp .imageBoxTests {
     width: 100%;
+    order: 2;
   }
 }
 .testsSinglePageParent .testsSingleSecUp .imageBoxTests img {
@@ -377,4 +403,45 @@ h3.titleOfCategory {
 }
 .testsSinglePageParent .descriptionBoxTests .aboutTextTests p {
   text-align: justify;
+}
+.testsSinglePageParent .testsSingleSecDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testsSinglePageParent .testsSingleSecDown .entry-content {
+  width: 75%;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecDown .entry-content {
+    width: 100%;
+    order: 2;
+  }
+}
+.testsSinglePageParent .testsSingleSecDown .linkToQuizButtonParent {
+  width: 20%;
+  position: sticky;
+  height: -moz-max-content;
+  height: max-content;
+  top: 30px;
+  bottom: auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0px;
+}
+.testsSinglePageParent .testsSingleSecDown .linkToQuizButtonParent .priceTests {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecDown .linkToQuizButtonParent {
+    width: 100%;
+    position: unset;
+    order: 1;
+  }
 }/*# sourceMappingURL=additional.css.map */

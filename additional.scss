@@ -159,6 +159,9 @@ h3.titleOfCategory{
         a.btn{
             background-color: #2e31a6 !important;
             border-radius: 8px;
+            font-size: 20px;
+            padding: 15px 25px;
+            height: auto;
         }
     }
 }
@@ -167,56 +170,81 @@ h3.titleOfCategory{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        padding: 25px 20px;
+        margin: 30px 0px;
         @include sm{
             gap: 15px;
         }
         .detailSection{
-            width: 50%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include sm{
+                width: 100%;
+                order: 1;
+            }
+            .titleTestTxt{
+                font-size: 32px;
+                font-weight: 600;
+                margin: 0;
+            }
+            .explainTestCardArchive{
+                margin: 0;
+                text-align: justify;
+            }
+        }
+        .numberOfQuestionsBox , .timeQuizsBox , .numberOfStartTestBox{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+            width: -moz-max-content;
+            width: 90%;
+            padding: 10px 20px;
+            margin-bottom: 10px;
             @include sm{
                 width: 100%;
             }
-            .numberOfQuestionsBox , .timeQuizsBox{
+            .numberOfQuestionsCol1 , .timeQuizsCol1 , .numberOfStartTestCol2{
                 display: flex;
+                // flex-direction: column;
+                gap: 8px;
                 align-items: center;
-                justify-content: space-between;
-                border-radius: 8px;
-                box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-                width: -moz-max-content;
-                width: 35%;
-                padding: 10px 20px;
-                margin-bottom: 20px;
-                @include sm{
-                    width: 100%;
-                }
-                .numberOfQuestionsCol1 , .timeQuizsCol1{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    align-items: center;
-                    p{
-                        margin: 0;
-                        font-size: 16px;
-                        font-weight: 500;
-                    }
-                }
-            }
-            .boxsParent{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                @include sm{
-                    gap: 0;
-                }
-                svg{
-                    display: block;
+                p{
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 500;
                 }
             }
         }
+        .numberOfStartTestBox{
+            margin-bottom: 0;
+        }
+        .boxsParent{
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 20px;
+            @include sm{
+                gap: 0;
+                width: 100%;
+                order: 3;
+            }
+            svg{
+                display: block;
+            }
+        }
         .imageBoxTests {
-            width: 35%;
+            width: 30%;
             @include sm{
                 width: 100%;
+                order: 2;
             }
             img{
                 border-radius: 10px;
@@ -227,6 +255,43 @@ h3.titleOfCategory{
         .aboutTextTests{
             p{
                 text-align: justify;
+            }
+        }
+    }
+    .testsSingleSecDown{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .entry-content{
+            width: 75%;
+            text-align: justify;
+            @include sm{
+                width: 100%;
+                order: 2;
+            }
+        }
+        .linkToQuizButtonParent{
+            width: 20%;
+            position: sticky;
+            height: -moz-max-content;
+            height: max-content;
+            top: 30px;
+            bottom: auto;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0px;
+            .priceTests{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            @include sm{
+                width: 100%;
+                position: unset;
+                order: 1;
             }
         }
     }
