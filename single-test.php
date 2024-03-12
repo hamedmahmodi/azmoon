@@ -10,13 +10,6 @@ get_header();
 ?>
 
 <main id="primary" class="site-main mainView">
-    <?php
-    // get the post id
-    $quizID = get_the_ID();
-    ?>
-    <div class="linkToQuizButtonParent">
-        <a href="<?php echo get_site_url(); ?>/run-quiz?quiz=<?php echo $quizID; ?>" id="load-content-button" class="waves-effect waves-light btn deep-orange darken-4 white-text">شروع آزمون</a>
-    </div>
 
     <?php
     while ( have_posts() ) :

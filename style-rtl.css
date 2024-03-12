@@ -150,40 +150,6 @@ img {
   height: auto;
 }
 
-.testsSinglePageParent .testsSingleSecUp {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .testsSinglePageParent .testsSingleSecUp {
-    gap: 15px;
-  }
-}
-.testsSinglePageParent .testsSingleSecUp .descriptionBoxTests {
-  width: 50%;
-}
-@media screen and (max-width: 768px) {
-  .testsSinglePageParent .testsSingleSecUp .descriptionBoxTests {
-    width: 100%;
-  }
-}
-.testsSinglePageParent .testsSingleSecUp .descriptionBoxTests .aboutTextTests p {
-  text-align: justify;
-}
-.testsSinglePageParent .testsSingleSecUp .imageBoxTests {
-  width: 35%;
-}
-@media screen and (max-width: 768px) {
-  .testsSinglePageParent .testsSingleSecUp .imageBoxTests {
-    width: 100%;
-  }
-}
-.testsSinglePageParent .testsSingleSecUp .imageBoxTests img {
-  border-radius: 10px;
-}
-
 footer .site-info {
   background-color: #2e31a6;
   padding-top: 50px;

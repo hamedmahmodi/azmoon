@@ -140,11 +140,17 @@ add_action( 'widgets_init', 'azmoon_widgets_init' );
 function azmoon_scripts() {
 	wp_enqueue_style( 'azmoon-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'azmoon-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'swiper-style', get_template_directory_uri().'/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'additional-style', get_template_directory_uri().'/additional.css', array(), _S_VERSION );
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'azmoon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'azmoon-timer', get_template_directory_uri() . '/js/timer.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
+	if(is_page('30')){
+		wp_enqueue_script( 'azmoon-timer', get_template_directory_uri() . '/js/timer.js', array(), _S_VERSION, true );
+	}
+	wp_enqueue_script( 'azmoon-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'sideNav', get_template_directory_uri() . '/js/sideNav.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'swiperSlides', get_template_directory_uri() . '/js/swiperSlides.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'materialize', get_template_directory_uri() . '/materialize/js/materialize.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'materialize.min', get_template_directory_uri() . '/materialize/js/materialize.min.js', array(), _S_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

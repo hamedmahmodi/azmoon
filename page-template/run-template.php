@@ -11,7 +11,7 @@ $azmoon_single_test_time = get_field('azmoon_single_test_time', $quizID);
 
 <div class="runQuizPageBack mainView">
     <div>You are running Quiz with ID = <?php echo $quizID; ?></div>
-    <div class="timerCountParent"><span id="min"><?php echo $azmoon_single_test_time ?></span>:<span id="sec">00</span></div>
+    <div class="timerCountParent"><span id="min"><?php echo is_numeric($azmoon_single_test_time) ? $azmoon_single_test_time : 10; ?></span>:<span id="sec">00</span></div>
     <!-- Custom progress bar using a div -->
     <div class="progress progressBarSetTimeParent">
         <div id="dynamicProgressBarSetTime" class="determinate"></div>

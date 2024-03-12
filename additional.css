@@ -148,8 +148,71 @@ textarea:focus {
 .archiveTestsParent {
   min-height: 100vh;
 }
+.archiveTestsParent .headingArchiveTests {
+  border-bottom: 1px solid #9e9e9e;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.archiveTestsParent .headingArchiveTests h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
 .archiveTestsParent .searchResult {
   margin-top: 20px;
+}
+.archiveTestsParent .categoriesCardsParent {
+  padding: 40px 0px;
+}
+.archiveTestsParent .categoriesCardsParent .swiper-wrapper {
+  padding: 15px 0px;
+}
+.archiveTestsParent .categoriesCardsParent .swiper-wrapper a.categoriesCard {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0px;
+}
+.archiveTestsParent .liveSearchSectionParent {
+  position: relative;
+  border: 1px solid #000;
+  padding: 8px;
+  width: 70%;
+  margin: auto;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .archiveTestsParent .liveSearchSectionParent {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .archiveTestsParent .liveSearchSectionParent {
+    width: 100% !important;
+  }
+}
+.archiveTestsParent .liveSearchSectionParent .iconSearchParent {
+  position: absolute;
+  border-left: 1px solid #000;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+.archiveTestsParent .liveSearchSectionParent input.input-field {
+  position: relative;
+  width: 94%;
+  left: 0;
+  right: 50px;
+  border-bottom: none;
+  font-family: iransansx !important;
+}
+.archiveTestsParent .liveSearchSectionParent input.input-field:active {
+  border-bottom: none;
 }
 
 .testsCategorySections {
@@ -199,10 +262,34 @@ textarea:focus {
 .testsCategorySections .row .card-content .explainTestCardArchive {
   text-align: justify;
 }
+.testsCategorySections .row .cardsMetaBoxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testsCategorySections .row .cardsMetaBoxs .numberOfQuestions, .testsCategorySections .row .cardsMetaBoxs .starRatings {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: flex-start;
+  gap: 3px;
+  padding: 0px 24px 10px 0px;
+}
+.testsCategorySections .row .cardsMetaBoxs .starRatings {
+  padding: 0px 0px 10px 24px;
+}
+.testsCategorySections .row .cardsMetaBoxs .numberOfQuestions svg {
+  margin-left: 2px;
+}
+.testsCategorySections .row .cardsMetaBoxs svg {
+  display: block;
+}
 
 h3.titleOfCategory {
   border-bottom: 1px solid #9e9e9e;
   padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .site-header nav {
@@ -211,4 +298,83 @@ h3.titleOfCategory {
 }
 .site-header nav .nav-wrapper a {
   color: #000;
+}
+
+.testsSinglePageParent .linkToQuizButtonParent a.btn {
+  background-color: #2e31a6 !important;
+  border-radius: 8px;
+}
+
+.testsSinglePageParent .testsSingleSecUp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecUp {
+    gap: 15px;
+  }
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecUp .detailSection {
+    width: 100%;
+  }
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: -moz-max-content;
+  width: 35%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox {
+    width: 100%;
+  }
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .timeQuizsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .numberOfQuestionsCol1, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .timeQuizsCol1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .numberOfQuestionsBox .timeQuizsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .numberOfQuestionsCol1 p, .testsSinglePageParent .testsSingleSecUp .detailSection .timeQuizsBox .timeQuizsCol1 p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent {
+    gap: 0;
+  }
+}
+.testsSinglePageParent .testsSingleSecUp .detailSection .boxsParent svg {
+  display: block;
+}
+.testsSinglePageParent .testsSingleSecUp .imageBoxTests {
+  width: 35%;
+}
+@media screen and (max-width: 768px) {
+  .testsSinglePageParent .testsSingleSecUp .imageBoxTests {
+    width: 100%;
+  }
+}
+.testsSinglePageParent .testsSingleSecUp .imageBoxTests img {
+  border-radius: 10px;
+}
+.testsSinglePageParent .descriptionBoxTests .aboutTextTests p {
+  text-align: justify;
 }/*# sourceMappingURL=additional.css.map */
