@@ -206,4 +206,68 @@ footer .site-info .copyRight {
 }
 footer .site-info .copyRight a {
   padding: 0 10px;
+}
+
+.comments-area {
+  width: 75%;
+}
+.comments-area input[type=submit] {
+  padding: 15px 25px;
+  background-color: #2E31A6;
+  color: white;
+}
+.comments-area .comment-list {
+  padding: 0;
+}
+.comments-area .comment-list li::marker {
+  content: none;
+}
+.comments-area .comment-list img {
+  border-radius: 50%;
+}
+.comments-area .comment-list .comment-meta, .comments-area .comment-list .comment-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments-area .comment-list a {
+  color: #2E31A6;
+}
+.comments-area .fn {
+  margin-right: 8px;
+}
+.comments-area .comment-reply-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.comments-area .comment {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 15px;
+  padding: 0 25px;
+  margin: 15px 0;
+}
+.comments-area .comment-body {
+  padding: 15px 0;
+}
+.comments-area .depth-2 {
+  box-shadow: unset;
+  padding: 0;
+  border-radius: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.comments-area textarea {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border: none;
+  border-radius: 15px;
+}
+.comments-area input[type=text], .comments-area input[type=email] {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border: none;
+  border-radius: 8px;
+}
+.comments-area .comment-form-url, .comments-area .says {
+  display: none;
+}
+.comments-area .comment-metadata {
+  font-size: 12px;
 }/*# sourceMappingURL=style-rtl.css.map */
